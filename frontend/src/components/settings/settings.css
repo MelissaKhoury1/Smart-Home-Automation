@@ -1,0 +1,86 @@
+.settings-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: transparent; 
+    border-radius: 8px;
+    box-shadow: none;
+  }
+  
+  .settings-container h2 {
+    margin-bottom: 15px;
+  }
+
+  .add-device-form, .devices-table {
+    background: none; 
+    box-shadow: none; 
+    padding: 0; 
+  }
+  
+  /* Add Device Form */
+  .add-device-form {
+    display: flex;
+    flex-direction: row; /* Make it horizontal */
+    gap: 10px;
+    align-items: center;
+  }
+  
+  
+  .add-device-form input, .add-device-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .add-device-form button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .add-device-form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Devices Table */
+  .devices-table {
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  
+  .devices-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .devices-table th, .devices-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .devices-table th {
+    background-color: #333;
+    color: white;
+  }
+  
+  .remove-btn {
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .remove-btn:hover {
+    background-color: darkred;
+  }
+  

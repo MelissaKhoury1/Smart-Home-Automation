@@ -1,0 +1,284 @@
+/* Styling the container */
+.container {
+  padding: 50px;
+  margin-top: 20px;
+  font-family: 'Arial';
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.rooms-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 rooms per row */
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+  width: 100%; /* Ensures it takes full width of the container */
+  justify-content: center; /* Centers the grid content horizontally */
+  align-items: center; /* Centers the grid content vertically */
+  text-align: center; /* Centers the text inside each box */
+}
+
+.room, .add-room {
+  width: 100%; /* Ensure it takes the full space of the grid column */
+  min-width: 200px;
+  height: 150px; /* Fixed height for rooms */
+  padding: 20px;
+  background-color: #333;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  box-sizing: border-box;
+  overflow: hidden; /* Prevent overflow from content */
+}
+
+.room:hover, .add-room:hover {
+  background-color: #444;
+}
+
+.room-label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+form {
+  margin-top: 50px;
+}
+
+.add-room {
+  display: flex;
+  flex-direction: column; /* Stack input and button */
+  justify-content: center;
+  align-items: center;
+}
+
+.add-room input,
+.add-room button {
+  display: block;
+  margin: 10px 0; /* Ensure spacing between input and button */
+}
+
+.add-room input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-room button {
+  padding: 10px 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-room button:hover {
+  background-color: #45a049;
+}
+
+.devices-container {
+  margin-top: 0px;
+  justify-content: center; /* Centers the grid content horizontally */
+  align-items: center; /* Centers the grid content vertically */
+  text-align: center;
+}
+
+.device {
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.device span {
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.device-control h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.devices-container h4 {
+  font-size: 30px;
+}
+
+
+.device-control button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  background-color: #333;
+  color: white;
+}
+
+.device-control button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.device-control button:hover:not(:disabled) {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.device-control button:active:not(:disabled) {
+  background-color: #45a049;
+}
+
+
+.switch {
+  margin-top: 10px; /* Ensure it comes below the value */
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #4CAF50; /* Green when on */
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px); /* Move the circle to the right when on */
+}
+
+
+/* Button styles (if any) */
+.rooms-container button{
+  padding: 100px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 10px 0;
+}
+
+select {
+  padding: 8px;
+  margin-top: 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* Device Toggle Switch (specific to device status control) */
+.device .switch {
+  margin-top: 10px; /* Add some space between device name and switch */
+  display: inline-block;
+  position: relative;
+}
+
+.device .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.device .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.device .switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+.device .switch input:checked + .slider {
+  background-color: #4CAF50; /* Green when on */
+}
+
+.device .switch input:checked + .slider:before {
+  transform: translateX(26px); /* Move the circle to the right when on */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .rooms-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 rooms per row for medium screens */
+  }
+}
+
+@media (max-width: 900px) {
+  .rooms-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 rooms per row for smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .rooms-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 rooms per row for mobile screens */
+  }
+}

@@ -1,0 +1,99 @@
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.titleD {
+  margin-top: 100px;
+  font-size: 30px;
+  margin-bottom: -20px;
+  color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-family: 'Arial', sans-serif; /* Change this to your desired font */
+    font-size: 20px; /* Adjust size if needed */
+    font-weight: bold; /* Optional: make it bold */
+}
+
+select,
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+
+
+.error {
+  color: red;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 1px solid #ddd; /* Adding border to the entire table */
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #686868; /* Adding borders to table cells */
+}
+
+th {
+  background-color: #333; /* Changed header background color to match the button */
+  color: white;
+  font-size: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+td {
+  font-size: 14px;
+  
+}
+
+h3 {
+  color: #333;
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Style for buttons on the Devices page */
+.container button {
+  background-color: #333; 
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background-color: #444;
+}
+

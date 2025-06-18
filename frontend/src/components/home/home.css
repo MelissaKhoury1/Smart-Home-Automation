@@ -1,0 +1,31 @@
+.containerH {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  background-color: #f4f4f4; /* Light background color */
+}
+
+.titleH {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.welcome-text {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.home-container {
+  text-align: center;
+  padding: 50px;
+}
+
+.home-content h1 {
+  font-size: 2rem;
+}

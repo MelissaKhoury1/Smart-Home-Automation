@@ -1,0 +1,65 @@
+/* Set up a full-page layout */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Push content to the top */
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4; /* Optional background color */
+}
+
+/* Style for the header */
+.auth-header {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Header background */
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Keep header on top of other content */
+}
+
+.auth-header h1 {
+  margin: 0;
+}
+
+/* Center the login form */
+.login-form {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  background-color: white;
+  margin-top: 200px; /* Space below the fixed header */
+}
+
+.login-form input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.login-form button {
+  padding: 10px;
+  width: 85%;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.login-form p {
+  margin-top: 10px;
+}
+
+.login-form a {
+  color: #2b72d6;
+  text-decoration: none;
+}
