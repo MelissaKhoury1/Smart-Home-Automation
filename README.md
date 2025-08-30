@@ -21,7 +21,3 @@ A full-stack web application that allows homeowners to control smart devices (AC
 - **Backend:** Node.js, Express.js
 - **Database:** MySQL
 - **Version Control:** Git & GitHub
-
----
-
-## 📸 Screenshots
