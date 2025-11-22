@@ -3,10 +3,10 @@ const mysql = require('mysql2');
 
 // Create a connection to the MySQL database
 const db = mysql.createConnection({
-  host: 'localhost', // Database host (localhost indicates the database is running on the same machine)
-  user: 'root', // The username used to access the database (root is default, but consider using a specific user for security)
-  password: 'MySql$$$2025', // The password for the database user
-  database: 'smarthome', // The name of the database to connect to
+  host: process.env.DB_HOST, // Database host (localhost indicates the database is running on the same machine)
+  user: process.env.DB_USER, // The username used to access the database (root is default, but consider using a specific user for security)
+  password: process.env.DB_PASSWORD, // The password for the database user
+  database: process.env.DB_NAME, // The name of the database to connect to
 });
 
 // Connect to the database
